@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Foooter from './components/Foooter';
+import Header from './components/Header';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
+  const [light, setLight] = useState(false)
+  const [signIn, setSignIn] = useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header light={light} setLight={setLight}/>
+    <Routes>
+      <Route path='/' element={<SignUp light={light}/>}/>
+      <Route path='/sign-in' element={<SignIn light={light}/>}/>
+    </Routes>
+    <Foooter light={light}/>
+    </>
   );
 }
 
