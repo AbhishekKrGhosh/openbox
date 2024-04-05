@@ -11,6 +11,11 @@
   justify-content: center;
   text-align: center;
 }
+.logo{
+  height: 23px;
+  width: 23px;
+  margin-right: 10px;
+}
 .themeBtn{
   margin-left: auto;
   margin-right: 50px;
@@ -45,5 +50,26 @@
   width: 20vw;
   border: 1px solid;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 50px;
+}
+.create{
+  height: 40px;
+  width: 10vw;
+  background-color: #112FC3;
+  color: white;
+  border-radius: 5px;
+}
+.gcreate{
+  height: 40px;
+  width: 18vw;
+  background-color: #3a3a3a;
+  color: white;
+  border-radius: 5px;
+}
+.openbox{
+  height: 85vh;
+  width: 100%;
 }
