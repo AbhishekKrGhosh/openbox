@@ -4,7 +4,7 @@ import { useGoogleLogin } from '@react-oauth/google';
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
 
-function SignUp({light, setData}){
+function SignUp({light, setData, setName}){
     const navigate = useNavigate()
     const login = useGoogleLogin({
         onSuccess: async(response) => {
@@ -14,8 +14,9 @@ function SignUp({light, setData}){
                     Authorization: `Bearer ${response.access_token}`,
                 },
             })
-            console.log(res.data.name)
+            console.log(res.data)
             setData(res.data)
+            setName(res.data.name)
             navigate('/openbox')
           } catch (error) {
             console.log(error)
@@ -27,7 +28,7 @@ function SignUp({light, setData}){
             <div className="googleSignUp" style={light?{background:"#F5F7F8"}:{background:"#121213"}}>
                 <div>Create a new account</div>
                 <div>
-                <button className="gcreate" onClick={() => login()}><FcGoogle style={{fontSize:'15px', marginTop:'2px'}}/>  Sign Up with Google</button>
+                <button className="gcreate" style={light?{background:"white", color:'black'}:{background:"#3a3a3a"}} onClick={() => login()}><FcGoogle style={{fontSize:'15px', marginTop:'2px'}}/>  Sign Up with Google</button>
                         
                 </div>
                 <div><button className="create">Create an account</button></div>

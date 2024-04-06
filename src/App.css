@@ -11,10 +11,24 @@
   justify-content: center;
   text-align: center;
 }
+.header2{
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  font-size: 30px;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+}
 .logo{
   height: 23px;
   width: 23px;
   margin-right: 10px;
+}
+.logo2{
+  height: 23px;
+  width: 23px;
+  margin: 7px 40px 0 20px;
 }
 .themeBtn{
   margin-left: auto;
@@ -72,4 +86,54 @@
 .openbox{
   height: 85vh;
   width: 100%;
+  display: flex;
+}
+.sidebar{
+  height: 89vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+}
+.sideLogos{
+  height: 100%;
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 5vh;
+}
+.img2{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+.img3{
+  height: 50vh;
+}
+.sb{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.centralPic{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+.inbox{
+  width: 15vw;
+  height: 100vh;
+  border-right: solid 1px #3a3a3a;
+  padding: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.mails{
+  width: 50vw;
+  height: 80vh;
 }
