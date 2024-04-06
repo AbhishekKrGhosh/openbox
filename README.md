@@ -4,88 +4,49 @@ My loom video: https://www.loom.com/share/ab25523f23c942d4941dbdd16e28be4e?sid=a
 
 live link: https://openbox-sdot.onrender.com/
 
+The SignUp Screen, This Screen uses google oauth in order to authenticate a valid user
+
 ![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/f69c3afb-4f27-4053-a480-54558c617ebf)
 
+I have implemented both dark as well as light theme.
+The theme can be changed through the button on available on the top.
 
 ![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/effdc5a2-6be0-4be7-91c4-75f632b0a9c7)
 
+The openbox home screen, on the top right corner you can see your name and on the bottom left corner you can see your picture.
+
 ![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/30e73d6e-d211-46a9-bf0d-a8cefa790a42)
+
+This screen opens all the main availabe on the api provided, id clicked on a paricular mail all the mails related to that thread id will appear.
 
 ![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/99d043fb-2ed7-430e-b40f-7f3b9df60dc1)
 
+This is the reply component
+
 ![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/14a72226-5ed6-4664-9566-c1ef65de4368)
+
+This is the delete component, after selecting a particular mail, type 'd' on your keyboard, this will open a option to delete the mail.
 
 ![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/00868278-0d6b-4312-ace5-92a22bb48e07)
 
 
 
-# Getting Started with Create React App
+# To run this project on your device
+### fork this repo
+### open code editor
+### git clone https://github.com/AbhishekKrGhosh/openbox'
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Install the dependencies : `npm install` or just `npm i`
 
-## Available Scripts
 
-In the project directory, you can run:
+change the google auth client id and the bearer token
+<br>
+you can get your client id from google cloud console
+<br>
+you can get your bearer from https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://frontend.com
+<br>
+copy the jwt token from the url
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Run the project : `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
