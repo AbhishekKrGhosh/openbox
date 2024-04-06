@@ -3,7 +3,7 @@ import axios from 'axios';
 import MailHeader from "./MailHeader";
 import Mail from "./Mail";
 
-function Mails({threadId}){
+function Mails({threadId, setReply, del}){
     const [singleData, setSingleData] = useState(null);
     const tok = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiYWJoaXNoZWsuYW5kcmkwNUBnbWFpbC5jb20iLCJpZCI6MTA0LCJmaXJzdE5hbWUiOiJBYmhpc2hlayIsImxhc3ROYW1lIjoiS3VtYXIifSwiaWF0IjoxNzEyMzgwMTU0LCJleHAiOjE3NDM5MTYxNTR9.KgtKIYgkMlVw5dQDJ008d3FkdrrfXBm5u42aWGG3IyU'
     useEffect(() => {
@@ -20,7 +20,10 @@ function Mails({threadId}){
                 console.error('Error fetching single data:', error);
             }
         };fetchSingleData();
-    }, [threadId]);
+    }, [threadId, del]);
+    const handleReply = () => {
+        setReply(true)
+    }
 
     return(
         <div className='mails'>
@@ -31,7 +34,7 @@ function Mails({threadId}){
             ) : (
                 <p>Loading...</p>
             )}
-            {singleData?<button className='create'>Reply</button>:<></>}
+            {singleData?<button className='create' onClick={handleReply}>Reply</button>:<></>}
         </div>
 )
 }

@@ -3,7 +3,7 @@ import axios from 'axios';
 import InboxBox from './InboxBox';
 import { AiOutlineSearch } from "react-icons/ai";
 
-function Inbox({setThread, setThreadId}){
+function Inbox({setThread, setThreadId, del}){
     const [data, setData] = useState(null);
     const tok = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoiYWJoaXNoZWsuYW5kcmkwNUBnbWFpbC5jb20iLCJpZCI6MTA0LCJmaXJzdE5hbWUiOiJBYmhpc2hlayIsImxhc3ROYW1lIjoiS3VtYXIifSwiaWF0IjoxNzEyMzgwMTU0LCJleHAiOjE3NDM5MTYxNTR9.KgtKIYgkMlVw5dQDJ008d3FkdrrfXBm5u42aWGG3IyU'
     useEffect(() => {
@@ -22,7 +22,7 @@ function Inbox({setThread, setThreadId}){
             }
         };
         fetchData();
-    }, []);
+    }, [del]);
     
     return(
         <div style={{width:'20vw', height:'80vh', display:'flex', justifyContent:'center'}}>
