@@ -14,23 +14,24 @@ function Mails({threadId}){
                         'Authorization': `Bearer ${tok}`
                     }
                 });
-                await setSingleData(response.data.data);
+                setSingleData(response.data.data);
                 console.log(singleData[0])
             } catch (error) {
                 console.error('Error fetching single data:', error);
             }
         };fetchSingleData();
-    }, []);
+    }, [threadId]);
 
     return(
         <div className='mails'>
             
-            <MailHeader name={singleData[0].fromName} email={singleData[0].fromEmail}/>
+            <MailHeader />
             {singleData ? (
                 singleData.map((i)=>(<div key={i.id}>{<Mail subject={i.subject} fromEmail={i.fromEmail} toEmail={i.toEmail} body={i.body}/> }</div>))
             ) : (
                 <p>Loading...</p>
             )}
+            {singleData?<button className='create'>Reply</button>:<></>}
         </div>
 )
 }

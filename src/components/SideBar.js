@@ -32,7 +32,7 @@ function SideBar({light, data, setInbox, inbox}){
             <IoMail style={{cursor:'pointer'}}/>
             <BsFillSendFill style={{cursor:'pointer'}}/>
             <TfiMenuAlt style={{cursor:'pointer'}}/>
-            <BsInboxFill onClick={handleInbox} style={{cursor:'pointer'}}/>
+            <BsInboxFill onClick={handleInbox} style={{cursor:'pointer', color:'blue'}}/>
             <RiBarChart2Fill style={{cursor:'pointer'}}/>
             <div >
             {imageUrl && <img className="img2" src={imageUrl} alt="Profile Picture" />}

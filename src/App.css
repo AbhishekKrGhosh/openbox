@@ -75,6 +75,7 @@
   background-color: #112FC3;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 .gcreate{
   height: 40px;
@@ -82,6 +83,7 @@
   background-color: #3a3a3a;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 .openbox{
   height: 85vh;
@@ -126,7 +128,7 @@ text-align: center;
 }
 .inbox{
   width: 15vw;
-  height: 100vh;
+  height: 82vh;
   border-right: solid 1px #3a3a3a;
   padding: 10px;
   gap: 5px;
@@ -136,4 +138,10 @@ text-align: center;
 .mails{
   width: 50vw;
   height: 80vh;
+}
+.rightSide{
+  width: 20vw;
+  padding: 30px;
+  margin-left: 50px;
+  border-left: solid 1px grey;
 }
