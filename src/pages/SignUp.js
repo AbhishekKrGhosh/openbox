@@ -31,7 +31,7 @@ function SignUp({light, setData, setName}){
                 <button className="gcreate" style={light?{background:"white", color:'black'}:{background:"#3a3a3a"}} onClick={() => login()}><FcGoogle style={{fontSize:'15px', marginTop:'2px'}}/>  Sign Up with Google</button>
                         
                 </div>
-                <div><button className="create">Create an account</button></div>
+                <div><button className="create" onClick={() => login()}>Create an account</button></div>
                 <div>Already have an Account?<Link to='/sign-in' style={light?{color:"black"}:{color:"white"}}> Sign In</Link></div>
             </div>
         </div>
