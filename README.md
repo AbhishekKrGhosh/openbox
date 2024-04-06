@@ -1,8 +1,23 @@
-# REACHINBOX ASSIGNMENT
+# REACHINBOX ASSIGNMENT - OPENBOX
 
 My loom video: https://www.loom.com/share/ab25523f23c942d4941dbdd16e28be4e?sid=ae51e9e5-2bb8-460c-b7b1-c143e3681328
 
 live link: https://openbox-sdot.onrender.com/
+
+![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/f69c3afb-4f27-4053-a480-54558c617ebf)
+
+
+![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/effdc5a2-6be0-4be7-91c4-75f632b0a9c7)
+
+![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/30e73d6e-d211-46a9-bf0d-a8cefa790a42)
+
+![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/99d043fb-2ed7-430e-b40f-7f3b9df60dc1)
+
+![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/14a72226-5ed6-4664-9566-c1ef65de4368)
+
+![image](https://github.com/AbhishekKrGhosh/openbox/assets/92973940/00868278-0d6b-4312-ace5-92a22bb48e07)
+
+
 
 # Getting Started with Create React App
 
